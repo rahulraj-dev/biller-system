@@ -1,6 +1,5 @@
 package com.setu.biller.entity;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -8,10 +7,8 @@ import javax.persistence.Enumerated;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * This entity class will hold info related to customer bill.
@@ -38,9 +35,6 @@ public class CustomerBill implements Serializable {
   private BillStatus billStatus;
 
   private double billAmount;
-
-  @OneToMany(cascade= CascadeType.ALL)
-  private List<BillComponent> billComponents;
 
   public int getBillerBillID() {
     return billerBillID;
@@ -98,11 +92,4 @@ public class CustomerBill implements Serializable {
     this.billAmount = billAmount;
   }
 
-  public List<BillComponent> getBillComponents() {
-    return billComponents;
-  }
-
-  public void setBillComponents(List<BillComponent> billComponents) {
-    this.billComponents = billComponents;
-  }
 }
