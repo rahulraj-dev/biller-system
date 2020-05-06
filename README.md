@@ -10,5 +10,4 @@ This is a Springboot java project with maven build tool.
 
 This application uses H2 in memory database to store data and the initial dataset is present in a sql file located at `/src/main/resources/data.sql`. When the application is started, data is populated from this `data.sql` file into the database named `biller-payment`. You can update `application.properties` file according to your need.
 
-Currently the application is initialized with 5 customer data with phone numbers 7892562019, 8400313493 , 8400313490, 8400313491, 8400313490
-
+Currently the application is initialized with 5 customer data with phone numbers 7892562019, 8400313493 , 8400313492, 8400313491, 8400313490

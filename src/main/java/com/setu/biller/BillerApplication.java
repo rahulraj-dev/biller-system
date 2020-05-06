@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class BillerApplication {
 
 	public static void main(String[] args) {
+	  System.out.println("Welcome to biller System.");
 		SpringApplication.run(BillerApplication.class, args);
 	}
 
